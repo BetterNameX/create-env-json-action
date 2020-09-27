@@ -1,5 +1,5 @@
 {
-  "name": "create-env-json",
+  "name": "@betternamex/create-env-json-action",
   "version": "1.0.0",
   "description": "Create an environment file in JSON format",
   "main": "index.js",
@@ -9,5 +9,11 @@
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  },
+  "scripts": {
+    "package": "ncc build index.js -o dist"
   }
 }

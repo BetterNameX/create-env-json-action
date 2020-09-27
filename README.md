@@ -14,7 +14,7 @@ This action writes environment variables (or anything you want) to a JSON file t
 ## Usage
 
 ```
-uses: schdck/create-env-json@v1
+uses: BetterNameX/create-env-json-action@master
 id: create-env
 with:
   file-name: 'env.json'
@@ -30,6 +30,6 @@ with:
 
 You can later pass it's path as an input for another program (e.g. [`claudia.js`](https://claudiajs.com/), which receives a JSON in `--set-env-from-json`)
 
-#### Acessing the full-path
+#### Accessing the full-path
 
 You can later access the full path of the file using `${{ steps.create-env.outputs.full-path }}`
